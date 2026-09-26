@@ -124,8 +124,18 @@ medical-insurance-cost-prediction/
 ├── insurance.csv
 └── README.md
 ```
+<<<<<<< HEAD
 
 ## ▶️ How to Run Locally
+=======
+
+<<<<<<< HEAD
+
+▶️ How to Run Locally
+=======
+## ▶️ How to Run Locally
+>>>>>>> a059571 (Fix broken code fence and improve README formatting)
+>>>>>>> save-fix
 
 **1. Clone the repository**
 
