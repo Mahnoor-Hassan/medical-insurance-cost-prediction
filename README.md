@@ -128,6 +128,7 @@ medical-insurance-cost-prediction/
 ├── insurance.csv
 └── README.md
 
+
 ▶️ How to Run Locally
 
 Clone the repository:
@@ -159,3 +160,8 @@ Additional features could potentially improve prediction performance.
 Mahnoor Hassan
 
 Software Engineering Student
+
+
+
+
+
