@@ -6,7 +6,7 @@ A Machine Learning project that predicts an individual's estimated medical insur
 
 The goal of this project is to develop a machine learning model that estimates medical insurance charges using features such as age, BMI, number of children, smoking status, gender, and region.
 
-The project follows a complete Machine Learning workflow from dataset exploration and preprocessing to model training, evaluation, and deployment.
+The project follows a complete Machine Learning workflow — from dataset exploration and preprocessing to model training, evaluation, and deployment.
 
 ## 🎯 Problem Statement
 
@@ -16,20 +16,19 @@ This project uses Multiple Linear Regression to predict the estimated insurance 
 
 ## 📊 Dataset
 
-The project uses the Medical Cost Personal Dataset from Kaggle.
+The project uses the **Medical Cost Personal Dataset** from Kaggle.
 
-Dataset:
-https://www.kaggle.com/datasets/mirichoi0218/insurance
+**Dataset:** https://www.kaggle.com/datasets/mirichoi0218/insurance
 
-The dataset contains 1338 records and 7 original columns:
+The dataset contains 1,338 records and 7 original columns:
 
-- age
-- sex
-- bmi
-- children
-- smoker
-- region
-- charges
+- `age`
+- `sex`
+- `bmi`
+- `children`
+- `smoker`
+- `region`
+- `charges`
 
 ## 🧹 Data Preprocessing
 
@@ -42,11 +41,10 @@ The following preprocessing steps were performed:
 - Applied One-Hot Encoding to categorical variables
 - Prepared the final dataset for machine learning
 
-Categorical variables:
-
-- sex
-- smoker
-- region
+**Categorical variables:**
+- `sex`
+- `smoker`
+- `region`
 
 After preprocessing, the model used 8 input features.
 
@@ -54,36 +52,34 @@ After preprocessing, the model used 8 input features.
 
 Several visualizations were created to understand relationships between insurance charges and important variables:
 
-- Age vs Medical Insurance Charges
-- BMI vs Medical Insurance Charges
-- Smoking Status vs Medical Insurance Charges
+- Age vs. Medical Insurance Charges
+- BMI vs. Medical Insurance Charges
+- Smoking Status vs. Medical Insurance Charges
 - Correlation analysis
 
-One important observation was that smoking status showed a strong positive correlation with insurance charges in this dataset.
+One key observation: smoking status showed a strong positive correlation with insurance charges in this dataset.
 
 ## 🤖 Machine Learning Model
 
-### Algorithm
+**Algorithm:** Multiple Linear Regression
 
-Multiple Linear Regression
-
-The dataset was divided into:
+The dataset was split into:
 
 - 80% Training Data
 - 20% Testing Data
 
-The model was trained using the training dataset and evaluated using the testing dataset.
+The model was trained using the training set and evaluated using the testing set.
 
 ## 📊 Model Evaluation
 
-| Metric | Result |
-|---|---:|
-| MAE | 4,177.05 |
-| MSE | 35,478,020.68 |
-| RMSE | 5,956.34 |
-| R² Score | 0.807 |
+| Metric   | Result        |
+|----------|--------------:|
+| MAE      | 4,177.05      |
+| MSE      | 35,478,020.68 |
+| RMSE     | 5,956.34      |
+| R² Score | 0.807         |
 
-The model achieved an R² score of approximately 0.807 on the test set.
+The model achieved an **R² score of approximately 0.807** on the test set.
 
 ## 💻 Prediction Application
 
@@ -100,10 +96,10 @@ The application then predicts the estimated medical insurance cost.
 
 ## 🧪 Test Cases
 
-| Test Case | Age | Gender | BMI | Children | Smoker | Region | Predicted Cost |
-|---|---:|---|---:|---:|---|---|---:|
-| Test Case 1 | 30 | Female | 25 | 0 | No | Northeast | $4,321.21 |
-| Test Case 2 | 45 | Male | 32 | 2 | Yes | Southeast | $33,478.60 |
+| Test Case    | Age | Gender | BMI | Children | Smoker | Region    | Predicted Cost |
+|--------------|----:|--------|----:|---------:|--------|-----------|----------------:|
+| Test Case 1  | 30  | Female | 25  | 0        | No     | Northeast | $4,321.21       |
+| Test Case 2  | 45  | Male   | 32  | 2        | Yes    | Southeast | $33,478.60      |
 
 ## 🛠️ Technologies Used
 
@@ -127,41 +123,49 @@ medical-insurance-cost-prediction/
 ├── insurance_model.pkl
 ├── insurance.csv
 └── README.md
+```
 
+<<<<<<< HEAD
 
 ▶️ How to Run Locally
+=======
+## ▶️ How to Run Locally
+>>>>>>> a059571 (Fix broken code fence and improve README formatting)
 
-Clone the repository:
+**1. Clone the repository**
 
+```bash
 git clone https://github.com/YOUR-USERNAME/medical-insurance-cost-prediction.git
+```
 
-Move into the project directory:
+**2. Move into the project directory**
 
+```bash
 cd medical-insurance-cost-prediction
+```
 
-Install the required libraries:
+**3. Install the required libraries**
 
+```bash
 pip install pandas numpy scikit-learn matplotlib seaborn streamlit joblib
+```
 
-Run the application:
+**4. Run the application**
 
+```bash
 python -m streamlit run app.py
-
+```
 
 The application will open in your browser.
 
-⚠️ Limitations
-The model is trained on a relatively small dataset.
-Predictions are estimates and should not be treated as actual insurance quotations.
-Linear Regression assumes a linear relationship between the input features and insurance charges.
-Additional features could potentially improve prediction performance.
-👩‍💻 Author
+## ⚠️ Limitations
 
-Mahnoor Hassan
+- The model is trained on a relatively small dataset.
+- Predictions are estimates and should not be treated as actual insurance quotations.
+- Linear Regression assumes a linear relationship between the input features and insurance charges.
+- Additional features could potentially improve prediction performance.
 
+## 👩‍💻 Author
+
+**Mahnoor Hassan**
 Software Engineering Student
-
-
-
-
-
